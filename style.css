@@ -1077,7 +1077,7 @@ body:not(.isTablet) #indice .units ul li.active:not(.disabled) a .title {
 }
 
 /* Botones */
-.btn-danger,
+.btn-danger:not(#close-edit-mode-button),
  .btn-danger[disabled] {
     color: #DA812D;
     background-color: transparent;
@@ -1102,10 +1102,10 @@ body:not(.isTablet) #indice .units ul li.active:not(.disabled) a .title {
     text-shadow: none;
 }
 
-.btn-danger:hover,
- .btn-danger:focus,
- .btn-danger:active,
- .btn-danger.active,
+.btn-danger:hover:not(#close-edit-mode-button),
+ .btn-danger:focus:not(#close-edit-mode-button),
+ .btn-danger:active:not(#close-edit-mode-button),
+ .btn-danger.active:not(#close-edit-mode-button),
  .open .dropdown-toggle.btn-danger {
     color: #DA812D;
     background-color: #fff;
