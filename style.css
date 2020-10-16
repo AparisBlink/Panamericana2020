@@ -1020,7 +1020,7 @@ body:not(.isTablet) #indice .units ul li.active:not(.disabled) a .title {
 }
 
 /* Botones */
-.btn-danger
+.btn-danger,
  .btn-danger[disabled] {
     color: #DA812D;
     background-color: transparent;
