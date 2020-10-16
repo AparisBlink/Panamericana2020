@@ -1,14 +1,14 @@
 (function (blink) {
 	'use strict';
 
-	var panamericana2020Style = function () {
-			blink.theme.styles.modern.apply(this, arguments);
+	var Panamericana2020Style = function () {
+			blink.theme.styles.basic.apply(this, arguments);
 		},
 		page = blink.currentPage;
 
-	panamericana2020Style.prototype = {
-		//BK-15873 añadimos el estilo modern como parent para la herencia de los estilos del CKEditor
-		parent: blink.theme.styles.modern.prototype,
+	Panamericana2020Style.prototype = {
+		//BK-15873 añadimos el estilo basic como parent para la herencia de los estilos del CKEditor
+		parent: blink.theme.styles.basic.prototype,
 		bodyClassName: 'content_type_clase_panamericana2020',
 		extraPlugins: ['image2'],
 		ckEditorStyles: {
@@ -31,19 +31,21 @@
 			]
 		},
 
-		init: function() {
+		init: function (scope) {
+			var that = scope || this;
 			//BK-15873 Utilizamos this.parent declarada al inicio de la clase
-			this.parent.init.call(this.parent, this);
-			this.addActivityTitle();
+			this.parent.init.call(that);
+			that.addActivityTitle();
 			if(window.esWeb) return;
-			this.addPageNumber();
-			this.formatCarouselindicators();
-			this.addSlideNavigators();
+			that.addPageNumber();
+			that.formatCarouselindicators();
+			that.addSlideNavigators();
 		},
 
 		removeFinalSlide: function (scope) {
+			var that = scope || this;
 			//BK-15873 Utilizamos this.parent declarada al inicio de la clase
-			this.parent.removeFinalSlide.call(this.parent, this, true);
+			this.parent.removeFinalSlide.call(that, true);
 		},
 
 		addActivityTitle: function () {
@@ -121,9 +123,9 @@
 		//BK15873 Quitamos la funcion getEditorStyles para que herede de parent
 	};
 
-	panamericana2020Style.prototype = _.extend({}, new blink.theme.styles.modern(), panamericana2020Style.prototype);
+	Panamericana2020Style.prototype = _.extend({}, new blink.theme.styles.basic(), Panamericana2020Style.prototype);
 
-	blink.theme.styles.panamericana2020 = panamericana2020Style;
+	blink.theme.styles.panamericana2020 = Panamericana2020Style;
 
 })( blink );
 
@@ -140,7 +142,7 @@ $(document).ready(function () {
 		})
 		.each(function () {
 			var $header = $(this).find('h3');
-			$header.length && $header.html($header.html().replace(' ', ''));
+			$header.length && $header.html($header.html().replace(' ', ''));
 		});
 
 	// BK-8433 cambiamos el logo de las slides por el del dominio
