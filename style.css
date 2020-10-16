@@ -500,7 +500,7 @@
 /* Iconos */
 
 #actividad .player.audio {
-    background: url(images/panamericana2020_audio.png) 0 0 no-repeat;
+    background: url(images/modern_audio.png) 0 0 no-repeat;
     background-size: contain;
     width: 36px;
     height:24px;
@@ -677,7 +677,7 @@ body:not(.isTablet) #indice .units ul li.active:not(.disabled) a .title {
         margin-bottom: 25px;
         background: #da812d;
         color: #ffffff;
-        margin-left: -98px;
+        margin-left: -89px;
         border-radius: 0 40px 40px 0;
         display: block;
         width: fit-content;
@@ -699,6 +699,11 @@ body:not(.isTablet) #indice .units ul li.active:not(.disabled) a .title {
         color: #ffffff;
         font-weight: bold;
     }
+
+    a:hover, a:active, a:focus {
+        color: #da812d;
+    }
+
 
     /*SEPARAMOS STRONG DE ÉNFASIS*/
     strong {
