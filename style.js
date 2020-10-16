@@ -142,7 +142,7 @@ $(document).ready(function () {
 		})
 		.each(function () {
 			var $header = $(this).find('h3');
-			$header.length && $header.html($header.html().replace(' ', ''));
+			$header.length && $header.html($header.html().replace(' ', ''));
 		});
 
 	// BK-8433 cambiamos el logo de las slides por el del dominio
