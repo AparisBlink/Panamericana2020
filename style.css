@@ -704,6 +704,20 @@ body:not(.isTablet) #indice .units ul li.active:not(.disabled) a .title {
         color: #da812d;
     }
 
+    /* DESPLEGABLE */
+    .bck-dropdown-button {
+    padding: 10px;
+    background: #da812d;
+    color: white;
+    }
+    .bck-dropdown-content {
+    background-color: #ffffff;
+    border: 2px solid #da812d;
+    }
+    .bck-dropdown-icon>.fa {
+    border: none;
+    }
+
 
     /*SEPARAMOS STRONG DE ÉNFASIS*/
     strong {
