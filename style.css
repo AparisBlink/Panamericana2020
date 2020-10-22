@@ -347,7 +347,7 @@
         background-size: contain;
         background-image: url(images/LOGO-PANAMERICANA-ok-500px.png);
         height: 50px;
-        width: 400px;
+        width: 307px;
         margin-left: -100px;
         margin-right: -100px;
         margin-top: -6px;
@@ -647,6 +647,7 @@ body:not(.isTablet) #indice .units ul li.active:not(.disabled) a .title {
     .content_type_clase_panamericana2020 #actividad .content .header .title h3 {
         color: #DA812D;
         text-align: center;
+        position: relative;
     }
 
     .content_type_clase_panamericana2020 #actividad .content .header .title h3:before {
@@ -654,8 +655,8 @@ body:not(.isTablet) #indice .units ul li.active:not(.disabled) a .title {
     width: 100px;
     padding: 5px;
     position: absolute;
-    margin-top: 40px;
     border-bottom: 5px solid;
+    bottom: -11px
 }
 
 /* CKEDITOR */
