@@ -619,7 +619,7 @@ body:not(.isTablet) #indice .units ul li.active:not(.disabled) a .title {
         top: 0px;
     }
     .content_type_clase_panamericana2020 .publisher-navbar {
-        background-image: url(/useruploads/r/a/206166618/activity_other_imported/Header-Navbar_1400_65.jpg);
+        background-image: url(images/Header-Navbar_1400_65.jpg);
         background-size: cover;
         background-position-x: right;
         background-repeat: no-repeat;
@@ -638,7 +638,7 @@ body:not(.isTablet) #indice .units ul li.active:not(.disabled) a .title {
 
 /*GENERALES SLIDE*/
     .content_type_clase_panamericana2020 .logo-publisher {
-        background-image: url(https://admin.blinklearning.com/useruploads/r/a/126184596/activity_other_imported/LOGO-PANAMERICANA-ok.png);
+        background-image: url(images/LOGO-PANAMERICANA-ok-500px.png);
         height: 50px;
         width: 400px;
         margin-left: -100px;
@@ -1103,7 +1103,7 @@ body:not(.isTablet) #indice .units ul li.active:not(.disabled) a .title {
     box-shadow: 0 0 2px #da812d73;
     border-color: #da812d;
   }
-  
+
 /* Botones */
 .btn-danger:not(#close-edit-mode-button),
  .btn-danger[disabled] {
