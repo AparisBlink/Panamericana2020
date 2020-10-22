@@ -111,22 +111,26 @@
         color: #555;
         background-color: #fff;
         background-image: none;
-        border: 1px solid #ccc;
         border-radius: 4px;
-        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
-        box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
         -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
         transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+        border: 2px solid #da812d !important;
+        -webkit-box-shadow: 0 0 2px #da812d;
+        -moz-box-shadow: 0 0 2px #da812d;
+        box-shadow: 0 0 2px #da812d;
+        border-color: #da812d;
     }
 
     .content_type_clase_panamericana2020 .slide_main input:focus {
-        border-top-color: #3AC62A;
-        border-right-color: #3AC62A;
-        border-bottom-color: #3AC62A;
-        border-left-color: #3AC62A;
         outline-width: 0px;
         outline-style: none;
-        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(133, 200, 57, 0.6);
+        border-top-color: #da812d;
+        border-right-color: #da812d;
+        border-bottom-color: #da812d;
+        border-left-color: #da812d;
+        -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.075) inset, 0 0 8px #da812d73;
+        -moz-box-shadow: 0 1px 1px rgba(0,0,0,0.075) inset, 0 0 8px #da812d73;
+        box-shadow: 0 1px 1px rgba(0,0,0,0.075) inset, 0 0 8px #da812d73;
     }
 
     .content_type_clase_panamericana2020 .slide_main input[disabled],
@@ -1091,27 +1095,15 @@ body:not(.isTablet) #indice .units ul li.active:not(.disabled) a .title {
     box-shadow: 0 1px 1px rgba(0,0,0,0.075) inset, 0 0 8px #da812d73;
 }
 
-.content_type_clase_panamericana2020 .slide_main input:focus {
-    border-top-color: #da812d;
-    border-right-color: #da812d;
-    border-bottom-color: #da812d;
-    border-left-color: #da812d;
-    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.075) inset, 0 0 8px #da812d73;
-    -moz-box-shadow: 0 1px 1px rgba(0,0,0,0.075) inset, 0 0 8px #da812d73;
-    box-shadow: 0 1px 1px rgba(0,0,0,0.075) inset, 0 0 8px #da812d73;
-}
-.content_type_clase_panamericana2020 .slide_main input {
-    border: 2px solid #da812d !important;
-    -webkit-box-shadow: 0 0 2px #da812d;
-    -moz-box-shadow: 0 0 2px #da812d;
-    box-shadow: 0 0 2px #da812d;
-    border-color: #da812d;
-}
 .shortanswer-container textarea:focus,
  .shortanswer-container input:focus,
   .shortanswer-container .preview:focus {
-
+    -moz-box-shadow: 0 0 2px #da812d73;
+    -webkit-box-shadow: 0 0 2px #da812d73;
+    box-shadow: 0 0 2px #da812d73;
+    border-color: #da812d;
   }
+  
 /* Botones */
 .btn-danger:not(#close-edit-mode-button),
  .btn-danger[disabled] {
@@ -1475,6 +1467,6 @@ div.calculo table.marco * {
 }
 
 .content_type_clase_panamericana2020 .slide_main input {
-    border: 1px solid #ccc !important;
+    border: 2px solid #da812d !important;
 }
 
