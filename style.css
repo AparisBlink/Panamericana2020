@@ -841,23 +841,6 @@ body:not(.isTablet) #indice .units ul li.active:not(.disabled) a .title {
         margin-bottom: 10px;
     }
 
-    .rf-wordcontainer {
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.4rem;
-    font-weight: bold;
-    line-height: 2.5rem;
-    }
-
-    .rf-tgrid {
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-    font-size: 1.5rem;
-    }
-
-    .rf-foundword {
-    font-family: 'Raleway',sans-serif;
-    }
-
     .bck-td {
         background: #dcdcdc;
     }
@@ -1139,6 +1122,68 @@ body:not(.isTablet) #indice .units ul li.active:not(.disabled) a .title {
   .shortanswer-container .preview:focus {
 
   }
+
+/* SOPA DE LETRAS*/
+.rf-tablestyle {
+    border-color: #da812d;
+}
+.rf-tablegrid .rf-glowing {
+    background: #da812d59;
+}
+.rf-wordcontainer {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 2.5rem;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    border-color: #da812d;
+}
+.rf-tgrid {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-size: 1.8rem;
+    height: 30px;
+    width: 30px;
+}
+.rf-foundword {
+    font-family: 'Raleway',sans-serif;
+}
+
+/*PALABRAS CRUZADAS*/
+.slide.crosswords .enunciados {
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    border-color: #da812d;
+    padding: 10px 5px 10px 60px;
+}
+.slide.crosswords .respuestas .respuesta .caracter.solucion {
+    background-color: #da812d;
+}
+.slide.crosswords .respuestas .respuesta .caracter {
+    border: 1px solid #fff;
+}
+
+/*Crucigrama*/
+.slide.crosswords-puzzle table.puzzle td input{
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background-color: #da812d59;
+    border: 0 !important;
+}
+.slide.crosswords-puzzle table.puzzle td.hasEntry {
+    border: 1px solid #e09853;
+}
+.slide.crosswords-puzzle .enunciados {
+    border: 2px solid #da812d;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
 /* Botones */
 .btn-danger:not(#close-edit-mode-button),
  .btn-danger[disabled] {
