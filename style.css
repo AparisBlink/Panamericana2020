@@ -1132,8 +1132,8 @@ body:not(.isTablet) #indice .units ul li.active:not(.disabled) a .title {
 }
 .rf-wordcontainer {
     font-family: 'Raleway', sans-serif;
-    font-size: 1.4rem;
-    font-weight: bold;
+    font-size: 1.6rem;
+    font-weight: normal;
     line-height: 2.5rem;
     -moz-border-radius: 0;
     -webkit-border-radius: 0;
@@ -1151,6 +1151,10 @@ body:not(.isTablet) #indice .units ul li.active:not(.disabled) a .title {
 .rf-foundword {
     font-family: 'Raleway',sans-serif;
 }
+.rf-wordcontainer li .index {
+    color: #da812d;
+    font-weight: bold;
+}
 
 /*PALABRAS CRUZADAS*/
 .slide.crosswords .enunciados {
@@ -1164,7 +1168,7 @@ body:not(.isTablet) #indice .units ul li.active:not(.disabled) a .title {
     background-color: #da812d;
 }
 .slide.crosswords .respuestas .respuesta .caracter {
-    border: 1px solid #fff;
+    background-color: #da812d59;
 }
 
 /*Crucigrama*/
