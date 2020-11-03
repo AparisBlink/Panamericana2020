@@ -111,22 +111,22 @@
         color: #555;
         background-color: #fff;
         background-image: none;
+        border: 1px solid #ccc;
         border-radius: 4px;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+        box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
         -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
         transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-        -webkit-box-shadow: 0 0 2px #CCC;
-        -moz-box-shadow: 0 0 2px #CCC;
-        box-shadow: 0 0 2px #CCC;
-        border: 1px solid #CCC !important;
     }
 
     .content_type_clase_panamericana2020 .slide_main input:focus {
+        border-top-color: #3AC62A;
+        border-right-color: #3AC62A;
+        border-bottom-color: #3AC62A;
+        border-left-color: #3AC62A;
         outline-width: 0px;
         outline-style: none;
-        -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.075) inset, 0 0 8px #da812d73;
-        -moz-box-shadow: 0 1px 1px rgba(0,0,0,0.075) inset, 0 0 8px #da812d73;
-        box-shadow: 0 1px 1px rgba(0,0,0,0.075) inset, 0 0 8px #da812d73;
-        border: 2px solid #da812d !important;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(133, 200, 57, 0.6);
     }
 
     .content_type_clase_panamericana2020 .slide_main input[disabled],
@@ -333,7 +333,6 @@
         margin: 0 auto;
         padding-left: 90px;
         padding-right: 50px;
-        margin-top: 12px;
     }
 
     .content_type_clase_panamericana2020 .logo-publisher {
@@ -342,15 +341,15 @@
     }
     .content_type_clase_panamericana2020 .logo-publisher {
         content: " ";
+        background-image: url(logo-blink.png);
         background-repeat: no-repeat;
         float: left;
         background-size: contain;
         background-image: url(images/LOGO-PANAMERICANA-ok-500px.png);
         height: 50px;
-        width: 307px;
+        width: 400px;
         margin-left: -100px;
         margin-right: -100px;
-        margin-top: -6px;
     }
 
     .content_type_clase_panamericana2020 .slider-indicators {
@@ -607,6 +606,29 @@ body:not(.isTablet) #indice .units ul li.active:not(.disabled) a .title {
     margin-top: 50px;
 }
 
+/* CAMBIO EN LOS COLORES DEL ÁREA DE MATERIAL DE APOYO */
+#indice .unit-content .material .item .imagen.img:before {
+    background: #f36f23;
+}
+#indice .unit-content .material .item .imagen.musica:before {
+    background: #f36f23;
+}
+#indice .unit-content .material .item .imagen.video:before {
+    background: #f36f23;
+}
+#indice .unit-content .material .item .imagen.archivo:before, #indice .unit-content .material .item .imagen.pdf:before {
+    background: #f36f23;
+}
+#indice .unit-content .material .item .imagen.libro:before {
+    background: #f36f23;
+}
+#indice .unit-content .material .item .imagen.url:before {
+    background: #f36f23;
+}
+#indice .unit-content .material .item .imagen.actividad:before {
+    background: #f36f23;
+}
+
 /*NAVBAR ADICIONAL*/
     #top-navigator.show_right:after {
         background: linear-gradient(to left, #e0963947, transparent);
@@ -616,7 +638,7 @@ body:not(.isTablet) #indice .units ul li.active:not(.disabled) a .title {
         top: 0px;
     }
     .content_type_clase_panamericana2020 .publisher-navbar {
-        background-image: url(images/Header-Navbar_1400_65.jpg);
+        background-image: url(/useruploads/r/a/206166618/activity_other_imported/Header-Navbar_1400_65.jpg);
         background-size: cover;
         background-position-x: right;
         background-repeat: no-repeat;
@@ -635,7 +657,7 @@ body:not(.isTablet) #indice .units ul li.active:not(.disabled) a .title {
 
 /*GENERALES SLIDE*/
     .content_type_clase_panamericana2020 .logo-publisher {
-        background-image: url(images/LOGO-PANAMERICANA-ok-500px.png);
+        background-image: url(https://admin.blinklearning.com/useruploads/r/a/126184596/activity_other_imported/LOGO-PANAMERICANA-ok.png);
         height: 50px;
         width: 400px;
         margin-left: -100px;
@@ -647,7 +669,6 @@ body:not(.isTablet) #indice .units ul li.active:not(.disabled) a .title {
     .content_type_clase_panamericana2020 #actividad .content .header .title h3 {
         color: #DA812D;
         text-align: center;
-        position: relative;
     }
 
     .content_type_clase_panamericana2020 #actividad .content .header .title h3:before {
@@ -655,8 +676,8 @@ body:not(.isTablet) #indice .units ul li.active:not(.disabled) a .title {
     width: 100px;
     padding: 5px;
     position: absolute;
+    margin-top: 40px;
     border-bottom: 5px solid;
-    bottom: -11px
 }
 
 /* CKEDITOR */
@@ -667,7 +688,7 @@ body:not(.isTablet) #indice .units ul li.active:not(.disabled) a .title {
     .bck-title-activity {
         font-family: 'Raleway', Georgia, serif;
         font-weight: bold;
-        color: #5ebdb2;
+        color: #989898;
     }
 
     .bck-title1,
@@ -822,15 +843,19 @@ body:not(.isTablet) #indice .units ul li.active:not(.disabled) a .title {
 
     .rf-wordcontainer {
     font-family: 'Raleway', sans-serif;
-    font-size: 2rem;
+    font-size: 1.4rem;
     font-weight: bold;
-    line-height: 7rem;
+    line-height: 2.5rem;
     }
 
     .rf-tgrid {
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
     font-size: 1.5rem;
+    }
+
+    .rf-foundword {
+    font-family: 'Raleway',sans-serif;
     }
 
     .bck-td {
@@ -941,7 +966,7 @@ body:not(.isTablet) #indice .units ul li.active:not(.disabled) a .title {
         font-weight: 400;
     }
     .bck-box.box-3 .bck-title {
-        background: #5ebdb2;
+        background: #989898;
     }
 
     .bck-box.box-2 .bck-title p,
@@ -1093,15 +1118,27 @@ body:not(.isTablet) #indice .units ul li.active:not(.disabled) a .title {
     box-shadow: 0 1px 1px rgba(0,0,0,0.075) inset, 0 0 8px #da812d73;
 }
 
+.content_type_clase_panamericana2020 .slide_main input:focus {
+    border-top-color: #da812d;
+    border-right-color: #da812d;
+    border-bottom-color: #da812d;
+    border-left-color: #da812d;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.075) inset, 0 0 8px #da812d73;
+    -moz-box-shadow: 0 1px 1px rgba(0,0,0,0.075) inset, 0 0 8px #da812d73;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.075) inset, 0 0 8px #da812d73;
+}
+.content_type_clase_panamericana2020 .slide_main input {
+    border: 2px solid #da812d !important;
+    -webkit-box-shadow: 0 0 2px #da812d;
+    -moz-box-shadow: 0 0 2px #da812d;
+    box-shadow: 0 0 2px #da812d;
+    border-color: #da812d;
+}
 .shortanswer-container textarea:focus,
  .shortanswer-container input:focus,
   .shortanswer-container .preview:focus {
-    -moz-box-shadow: 0 0 2px #da812d73;
-    -webkit-box-shadow: 0 0 2px #da812d73;
-    box-shadow: 0 0 2px #da812d73;
-    border-color: #da812d;
-  }
 
+  }
 /* Botones */
 .btn-danger:not(#close-edit-mode-button),
  .btn-danger[disabled] {
@@ -1334,7 +1371,6 @@ body:not(.isTablet) #indice .units ul li.active:not(.disabled) a .title {
 
     .content_type_clase_panamericana2020 .logo-publisher {
         margin-right: 0px;
-        width: 240px;
     }
 }
 
@@ -1466,6 +1502,6 @@ div.calculo table.marco * {
 }
 
 .content_type_clase_panamericana2020 .slide_main input {
-    border: 1px solid #CCC !important;
+    border: 1px solid #ccc !important;
 }
 
