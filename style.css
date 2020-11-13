@@ -129,6 +129,7 @@
         padding: 50px 20px 0px 0px;
         margin-top: -43px;
         margin-bottom: 20px;
+        position: relative;
     }
     .content_type_clase_panamericana2020 #actividad .content .header .title h3 span {
         display: block;
@@ -391,10 +392,7 @@
     .content_type_clase_panamericana2020 .logo-publisher {
         display: block;
         margin-left: -48px;
-    }
-    .content_type_clase_panamericana2020 .logo-publisher {
         content: " ";
-        background-image: url(logo-blink.png);
         background-repeat: no-repeat;
         float: left;
         background-size: contain;
@@ -676,7 +674,7 @@
         top: 0px;
     }
     .content_type_clase_panamericana2020 .publisher-navbar {
-        background-image: url(/useruploads/r/a/206166618/activity_other_imported/Header-Navbar_1400_65.jpg);
+        background-image: url(images/Header-Navbar_1400_65.jpg);
         background-size: cover;
         background-position-x: right;
         background-repeat: no-repeat;
@@ -696,7 +694,7 @@
 
 /*GENERALES SLIDE*/
     .content_type_clase_panamericana2020 .logo-publisher {
-        background-image: url(https://admin.blinklearning.com/useruploads/r/a/126184596/activity_other_imported/LOGO-PANAMERICANA-ok.png);
+        background-image: url(images/LOGO-PANAMERICANA-ok-500px.png);
         height: 50px;
         width: 400px;
         margin-left: -100px;
@@ -714,7 +712,7 @@
     width: 100px;
     padding: 5px;
     position: absolute;
-    margin-top: 40px;
+    bottom: -7px;
     border-bottom: 5px solid;
     }
 /*--*/
@@ -1535,6 +1533,13 @@
     .content_type_clase_panamericana2020 #actividad .content .header .title h3 {
         padding-right: 20px;
         margin-bottom: 20px;
+        font-size: 2.4rem;
+    }
+    .content_type_clase_panamericana2020 #actividad .content .header .title h3:before {
+        border-bottom: 3px solid;
+    }
+    .bck-dropdown-titulo {
+        font-size: 1.8rem;
     }
 
 }
