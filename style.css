@@ -779,7 +779,7 @@
     color: black !important;
     }
     .bck-enfasis {
-    color: #595959;
+    color: #da812d;
     font-size: 14px;
     font-weight: bold;
     }
@@ -1127,11 +1127,15 @@
         box-shadow: 0 0 2px #da812d;
         border-color: #da812d;
     }
+
     .shortanswer-container textarea:focus,
      .shortanswer-container input:focus,
       .shortanswer-container .preview:focus {
-
-    }
+        -moz-box-shadow: 0 0 2px #da812d;
+        -webkit-box-shadow: 0 0 2px #da812d;
+        box-shadow: 0 0 2px #da812d;
+        border-color: #da812d;
+      }
 
     /* SOPA DE LETRAS*/
     .rf-tablestyle {
@@ -1540,6 +1544,9 @@
     }
     .bck-dropdown-titulo {
         font-size: 1.8rem;
+    }
+    .bck-box.box-1 {
+        padding:20px;
     }
 
 }
